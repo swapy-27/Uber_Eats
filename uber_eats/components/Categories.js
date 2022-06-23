@@ -34,7 +34,7 @@ const items = [
 export default function Categories() {
     return (
 
-        <ScrollView horizontal>
+        <ScrollView horizontal showsHorizontalScrollIndicator={false}>
             {items.map((item,idx)=>{
                 return (<View style={{alignItems:'center',marginRight:30}}>           
                 <Image source={items[idx].image}
